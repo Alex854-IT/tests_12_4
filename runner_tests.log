@@ -1,0 +1,16 @@
+2024-10-14 01:04:33,646 | WARNING | Неверный тип данных для объекта Runner: Имя может быть только числом, передано int
+Traceback (most recent call last):
+  File "D:\PythonProjectForUniversity\Unit_Test\tests_12_4.py", line 81, in test_run
+    run2 = Runner(name=10, speed="Alex")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjectForUniversity\Unit_Test\tests_12_4.py", line 19, in __init__
+    raise TypeError(f'Имя может быть только числом, передано {type(name).__name__}')
+TypeError: Имя может быть только числом, передано int
+2024-10-14 01:04:33,647 | WARNING | Неверная скорость для Runner: Скорость не может быть отрицательной, сейчас -5
+Traceback (most recent call last):
+  File "D:\PythonProjectForUniversity\Unit_Test\tests_12_4.py", line 67, in test_walk
+    run1 = Runner("Vasja", speed=-5)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonProjectForUniversity\Unit_Test\tests_12_4.py", line 24, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
